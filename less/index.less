@@ -54,6 +54,93 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background: black;
+	color: white;
 }
 
+@bigfont: 5rem;
+@smolfont: 1.5rem;
+
+.center {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+}
+
+.boxes {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: 40%;
+	margin: 2rem;
+	border: 2px solid white;
+}
+
+.left {
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-self: flex-start;
+}
+
+.right {
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-self: flex-end;
+}
+
+.logo {
+	width: 50%;
+	height: 50%
+	.center();
+}
+
+.picture {
+	.center();
+}
+
+.title {
+	.center();
+	
+	border-bottom: 1px solid white;
+	padding-bottom: 20px;
+}
+
+p {
+	.center();
+	margin-top: 20px;
+	font-size: @smolfont;
+}
+
+h1 {
+	font-size: @bigfont;
+}
+
+.skills {
+	margin: 2rem;
+	width: 15%;
+	.center();
+	flex-direction: column;
+	border: 1px solid white;
+}
+
+.skills ul {
+	flex-direction: column;
+	font-size: @smolfont;
+	.center();
+}
+
+.row {
+	display: flex;
+	font-size: @smolfont;
+}
+
+.jobs {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-size: @smolfont;
+	width: 80%;
+}
