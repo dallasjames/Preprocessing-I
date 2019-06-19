@@ -61,6 +61,7 @@ html, body {
 
 @bigfont: 5rem;
 @smolfont: 1.5rem;
+@box: 1px solid white; 
 
 .center {
 	display: flex;
@@ -111,6 +112,7 @@ html, body {
 p {
 	.center();
 	margin-top: 20px;
+
 	font-size: @smolfont;
 }
 
@@ -118,29 +120,47 @@ h1 {
 	font-size: @bigfont;
 }
 
-.skills {
-	margin: 2rem;
-	width: 15%;
-	.center();
+.jobs {
+	display: flex;
 	flex-direction: column;
+	align-items: center;
+	font-size: @smolfont;
 	border: 1px solid white;
+	width: 25rem;
+	margin-top: 10rem;
+	margin-bottom: 5rem;
 }
 
-.skills ul {
-	flex-direction: column;
-	font-size: @smolfont;
+.jobs ul {
 	.center();
+	flex-direction: column;
 }
 
 .row {
 	display: flex;
+	margin: 1rem;
+	justify-content: space-around;
 	font-size: @smolfont;
 }
 
-.jobs {
-	display: flex;
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: blue;
+}
+
+.port {
+	.center();
 	flex-direction: column;
-	align-items: flex-end;
-	font-size: @smolfont;
-	width: 80%;
+}
+
+@media (max-width: 500px) {
+	.row {
+		display: flex;
+		flex-direction: column;
+		.center();
+	}
 }
